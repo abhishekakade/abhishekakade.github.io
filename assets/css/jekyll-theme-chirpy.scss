@@ -1,0 +1,194 @@
+---
+---
+
+@import 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+body code {
+  font-family: "Fira Code", monospace;
+}
+
+header .post-desc, #search-results a, h5, h4, h3, h2, h1 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+#sidebar .site-title { font-size: 1.5rem; font-weight: 600; }
+
+#topbar-wrapper #breadcrumb a { color: #BADA55; }
+
+#sidebar ul li.nav-item a.nav-link:hover {
+  color: #BADA55;
+}
+
+// start blog posts related styles
+.fat-arrow { font-family: "Fira Code", monospace; }
+code.highlighter-rouge, .highlight pre { font-size: 1rem; }
+
+.post-tail-wrapper .post-meta a:not(:hover), .content a:not(.img-link) {
+  color: #BADA55;
+}
+
+#toc-wrapper ul .is-active-link {
+  color: #BADA55 !important;
+}
+
+#toc-wrapper ul .is-active-link::before {
+  background-color: #BADA55 !important;
+}
+
+// end blog posts related styles
+
+// start about page styles
+
+#about-page p { font-size: 1.15rem; }
+
+// end about page styles
+
+#page-category a:hover, #page-tag a:hover, .post-tags .post-tag:hover, .post-tail-wrapper .license-wrapper>a:hover, #search-results a:hover, #topbar #breadcrumb a:hover, .content a:not(.img-link):hover, .post-meta a:not([class]):hover, #access-lastmod a:hover, footer a:hover {
+  color: #BADA55 !important; border-bottom: 1px solid #BADA55;
+}
+
+.btn:hover {
+  background-color: #BADA55 !important; color: #212121;
+  .fas { color: #212121 !important; }
+}
+
+.btn.btn-outline-primary:not(.disabled):hover {
+  border-color: #BADA55 !important;
+}
+
+.post-navigation .btn {
+  p { font-size: 1.25rem; }
+}
+.post-navigation .btn:not(:hover) { color: #BADA55; }
+
+.post-navigation .btn:hover {
+  background-color: #212121 !important;
+  color: #DEDEDE;
+}
+
+.share-wrapper .share-icons button#copy-link:hover {
+  background-color: #212121 !important;
+  .fa-link { color: #DEDEDE !important; }
+}
+
+
+// breakpoint
+
+@media (min-width: 1200px) {
+  
+  .content {
+    & { font-size: 1.15rem; }
+    p, ul li { font-size: 1.25rem; }
+  }
+  .access .content { font-size: 1rem; }
+  code.highlighter-rouge, .highlight pre { font-size: 1.1rem; }
+  #about-page {
+    p { font-size: 1.4rem; }
+    #about-name { font-size: 1.25rem; }
+  }
+
+  .post-tail-wrapper .license-wrapper span:last-child, .post-tail-wrapper, .post-meta {
+    font-size: 1.1rem;
+  }
+  
+  #panel-wrapper .post-tag { border-color: #777777; }
+
+  #page-tag ul>li>a { font-size: 1.25rem; }
+  
+}
+
+// breakpoint
+
+@media (min-width: 1900px) {
+  
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.75rem; }
+  .content {
+    font-size: 1.5rem;
+    #tags a { font-size: 1.25rem; }
+    .categories { font-size: 1.25rem; }
+  }
+  #page-category ul>li>a { font-size: 1.5rem; }
+  #archives ul li { font-size: 1.35rem; }
+  code.highlighter-rouge {
+    font-size: 1.25rem;
+  }
+  
+  .highlight pre { font-size: 1.25rem; line-height: 1.5rem; }
+  
+  .post-tail-wrapper .license-wrapper span:last-child, .post-tail-wrapper, .post-meta {
+    font-size: 1.25rem;
+  }
+  
+  #panel-wrapper .panel-heading { font-size: 1.5rem; }
+  .access .content { font-size: 1.25rem; }
+  
+  #panel-wrapper .post-tag { font-size: 1rem; }
+  
+  #toc-wrapper ul a { font-size: 1.2rem; }
+  
+  #related-posts>h3 { font-size: 1.5rem; }
+  #related-posts .post-preview.card:hover { border: 1px solid #BADA55; background-color: #212121; }
+  #related-posts .post-preview:hover::before { background-color: #212121 !important; }
+  #related-posts .post-preview::before { background-color: #212121 !important; }
+  #related-posts .card {
+    time, .text-muted p { font-size: 1rem; }
+    h4 { font-size: 1.4rem; }
+  }
+  
+  // home page
+  #post-list .card .card-body {
+    .card-title { font-size: 1.5rem; }
+    .card-text.content { font-size: 1.25rem; }
+  }
+  
+  #main-wrapper>.container {
+    max-width: 1600px;
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+  }
+
+  #page-tag ul>li>a { font-size: 1.5rem; }
+  
+}
+
+
+// breakpoint
+
+@media (max-width: 850px) {
+
+  #search-cancel.btn:hover { color: #212121; }
+  #search-hints .post-tag { color: #BADA55; }
+  #search-result-wrapper .post-tag:hover {
+    // & { color: #212121 !important; }
+    & { background-color: #212121 !important; border: 1px solid #BADA55 !important; }
+  }
+  // #search-result-wrapper .post-tag::before:hover { color: #212121 !important; }
+
+}
+
+// breakpoint
+
+@media (max-width: 480px) {
+  
+  #topbar-title { font-family: "Fira Sans", sans-serif; }
+  .post-tail-wrapper { font-size: 1rem; }
+  code.highlighter-rouge { font-size: 0.95rem; }
+  .highlight pre { font-size: 1rem; }
+  .post-meta { font-size: 1rem; }
+  .post-tags { font-size: 0.95rem; }
+
+}
