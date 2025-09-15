@@ -31,5 +31,3 @@ order: 4
 </div>
 
 [![0xKirito](https://www.hackthebox.eu/badge/image/237445)](https://app.hackthebox.com/profile/237445)
-
-
