@@ -4,7 +4,7 @@ title: "AWS AI Practitioner: ML Fundamentals Cheat Sheet"
 #   name: 0xKirito
 #   link: https://github.com/0xKirito
 date: 2026-09-30T01:10:23+05:30
-categories: [Cheat Sheets]
+categories: [Cheat Sheets, AWS]
 tags: [AWS, Cheat Sheet]
 render_with_liquid: false
 ---
