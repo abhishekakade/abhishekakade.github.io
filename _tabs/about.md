@@ -26,8 +26,8 @@ order: 4
 
 <p></p>
 
-<p>And <a href="https://app.hackthebox.com/profile/237445" target="_blank" rel="noopener noreferrer">HackTheBox</a>.</p>
+<p>And <a href="https://app.hackthebox.com/public/users/237445" target="_blank" rel="noopener noreferrer">HackTheBox</a>.</p>
 
 </div>
 
-[![0xKirito](https://www.hackthebox.eu/badge/image/237445)](https://app.hackthebox.com/profile/237445)
+[![0xKirito](https://www.hackthebox.eu/badge/image/237445)](https://app.hackthebox.com/public/users/237445)
